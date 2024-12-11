@@ -6,7 +6,6 @@
 ![crate license](https://img.shields.io/github/license/patrickisgreene/hyperion)
 [![Docs.rs](https://docs.rs/hyperion/badge.svg)](https://docs.rs/hyperion)
 [![dependency status](https://deps.rs/crate/hyperion/0.1.0/status.svg)](https://deps.rs/crate/hyperion)
-
 [![unsafe forbidden](https://img.shields.io/badge/unsafe-forbidden-success.svg)](https://github.com/rust-secure-code/safety-dance/)
 
 </div>
