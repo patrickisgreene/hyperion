@@ -2,7 +2,6 @@
 
 # Hyperion
 
-![crate version](https://img.shields.io/crates/v/hyperion)
 [![Crates.io](https://img.shields.io/crates/v/hyperion.svg)](https://crates.io/crates/hyperion)
 ![crate license](https://img.shields.io/github/license/wendivoid/hyperion)
 [![Docs.rs](https://docs.rs/hexx/badge.svg)](https://docs.rs/hyperion)
