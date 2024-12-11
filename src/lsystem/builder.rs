@@ -1,5 +1,6 @@
 use crate::{Alphabet, Axiom, LSystem, Rule, Rules, Value, Variables};
 
+/// Builder struct to create a LSystem.
 pub struct LSystemBuilder<A: Alphabet> {
     axiom: Axiom<A>,
     rules: Rules<A>,
@@ -7,6 +8,8 @@ pub struct LSystemBuilder<A: Alphabet> {
 }
 
 impl<A: Alphabet> LSystemBuilder<A> {
+
+    /// Create a new LSystemBuilder from a starting Axiom.
     pub fn new<I: Into<Axiom<A>>>(axiom: I) -> LSystemBuilder<A> {
         LSystemBuilder {
             axiom: axiom.into(),
@@ -21,11 +24,13 @@ impl<A: Alphabet> LSystemBuilder<A> {
         self
     }
 
+    /// Push a rule onto the rule cache.
     pub fn rule(mut self, rule: Rule<A>) -> Self {
         self.rules.append(rule);
         self
     }
 
+    /// Finishing building and return the created LSystem.
     pub fn build(self) -> LSystem<A> {
         LSystem::new(self.axiom, self.rules, self.variables)
     }

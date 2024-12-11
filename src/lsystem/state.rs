@@ -2,12 +2,15 @@ use std::fmt;
 
 use crate::{Alphabet, Axiom, Module};
 
+/// The current State of an LSystem.
 #[derive(Debug, Clone, PartialEq)]
 pub struct State<A: Alphabet> {
     pub(crate) inner: Vec<Module<A>>,
 }
 
 impl<A: Alphabet> State<A> {
+
+    /// Generate a new LSystem state from an iterator of Module's.
     pub fn new<I: Into<Module<A>>, Iter: IntoIterator<Item = I>>(value: Iter) -> Self {
         State {
             inner: value.into_iter().map(|x| x.into()).collect(),
@@ -16,6 +19,8 @@ impl<A: Alphabet> State<A> {
 }
 
 impl<A: Alphabet> State<A> {
+
+    /// check whether the state contains the given module.
     pub fn contains(&self, m: &Module<A>) -> bool {
         self.inner.contains(m)
     }

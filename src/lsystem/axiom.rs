@@ -7,6 +7,8 @@ pub struct Axiom<A: Alphabet> {
 }
 
 impl<A: Alphabet> Axiom<A> {
+
+    /// Create a new Axiom from an initial LSystem State.
     pub fn new(inner: State<A>) -> Axiom<A> {
         Axiom { inner }
     }

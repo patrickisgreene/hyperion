@@ -1,8 +1,6 @@
 use hyperion::{LSystemBuilder, Module, Operator, Rule, State, Value};
 use pretty_assertions::assert_eq;
 
-// F(l,w)[&(c)B(l*b,w*h)]//(180)[&(d)B(l*e,w*h)
-
 #[derive(Debug, Clone, Copy, PartialEq, PartialOrd)]
 pub enum Parametric {
     F,

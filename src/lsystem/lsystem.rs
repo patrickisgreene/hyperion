@@ -4,10 +4,12 @@ use crate::{Alphabet, Axiom, Context, Rules, State, Variables};
 pub struct LSystem<A: Alphabet> {
     axiom: Axiom<A>,
     rules: Rules<A>,
-    pub variables: Variables,
+    variables: Variables,
 }
 
 impl<A: Alphabet> LSystem<A> {
+
+    /// Create a new LSystem from Axiom, Rules and variables.
     pub fn new(axiom: Axiom<A>, rules: Rules<A>, variables: Variables) -> Self {
         Self {
             axiom,
@@ -16,6 +18,7 @@ impl<A: Alphabet> LSystem<A> {
         }
     }
 
+    /// Evaluate this LSystem and return the generated LSystem state.
     pub fn sample(&self, generation: usize) -> State<A> {
         let mut state = State::<A>::from(&self.axiom);
         let mut variables = self.variables.clone();

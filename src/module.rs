@@ -2,6 +2,7 @@ use std::fmt;
 
 use crate::{Alphabet, Parameters};
 
+/// A module is a Single Instance of a Grammar type with all included parameters.
 #[derive(Debug, PartialEq, Clone)]
 pub struct Module<A: Alphabet> {
     pub token: A,
@@ -9,6 +10,8 @@ pub struct Module<A: Alphabet> {
 }
 
 impl<A: Alphabet> Module<A> {
+
+    /// Create a new Module with a given token and no parameters.
     pub fn new(token: A) -> Module<A> {
         Module {
             token,
@@ -16,6 +19,7 @@ impl<A: Alphabet> Module<A> {
         }
     }
 
+    /// Set the parameters for this module.
     pub fn params(mut self, params: Parameters) -> Self {
         self.params = params;
         self

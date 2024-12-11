@@ -22,6 +22,9 @@ impl fmt::Display for Value {
 }
 
 impl Value {
+
+    /// Evaluate this value fetching variables from first the parameters or the variables
+    /// argument.
     pub fn evaluate(&self, parameters: &Variables, variables: &Variables) -> Self {
         match self {
             Value::Var(x) => {
@@ -48,6 +51,9 @@ impl Value {
         }
     }
 
+    /// Convert the object to a f32.
+    /// 
+    /// Returns `None` if the value is not `Value::Num`
     pub fn to_float(&self) -> Option<f32> {
         if let Value::Num(x) = self {
             Some(*x)
