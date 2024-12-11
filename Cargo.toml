@@ -1,0 +1,17 @@
+[package]
+name = "hyperion"
+version = "0.1.0"
+edition = "2021"
+readme = "README.md"
+authors = ["Wendivoid wendivoid@gmail.com"]
+license = "MIT OR Apache-2.0"
+description = "Generic LSystem implementation."
+repository = "https://github.com/wendivoid/hyperion/"
+keywords = ["lsystem", "lsystems", "l-system", "lindenmayer", "grammar"]
+categories = ["mathematics", "algorithms"]
+
+[dependencies]
+rand = "0.8.5"
+
+[dev-dependencies]
+pretty_assertions = "1.4.0"
