@@ -10,7 +10,7 @@
 
 </div>
 
-Hyperion is a highly Generic crate for working with lindenmayer systems (LSystems). Inspired by The [Algorithmic beauty of Plants](https://en.wikipedia.org/wiki/The_Algorithmic_Beauty_of_Plants). Made to work with all types of lssytems including:
+Hyperion is a highly Generic crate for working with lindenmayer systems (LSystems). Inspired by The [Algorithmic beauty of Plants](https://en.wikipedia.org/wiki/The_Algorithmic_Beauty_of_Plants). Made to work with all types of lsytems including:
 
 - Stochasic
 - Contextual
