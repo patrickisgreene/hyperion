@@ -1,7 +1,7 @@
 use crate::{Alphabet, Module, State};
 
 /// The intiial Axiom used when starting the LSystem
-#[derive(Debug, Clone)]
+#[derive(Debug, PartialEq, Clone)]
 pub struct Axiom<A: Alphabet> {
     pub(crate) inner: State<A>,
 }

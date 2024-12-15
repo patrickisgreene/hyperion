@@ -1,6 +1,6 @@
 [package]
 name = "hyperion"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 readme = "README.md"
 authors = ["Wendivoid wendivoid@gmail.com"]
@@ -10,8 +10,15 @@ repository = "https://github.com/wendivoid/hyperion/"
 keywords = ["lsystem", "lsystems", "l-system", "lindenmayer", "grammar"]
 categories = ["mathematics", "algorithms"]
 
+[features]
+grammar = ["nom"]
+default = ["grammar"]
+
 [dependencies]
 rand = "0.8.5"
+nom = { version = "7.1.3", optional = true }
 
 [dev-dependencies]
+bevy = "0.15.0"
+bevy_panorbit_camera = "0.21.1"
 pretty_assertions = "1.4.0"

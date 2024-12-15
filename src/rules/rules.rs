@@ -1,6 +1,6 @@
 use crate::{Alphabet, Context, Module, Rule, State, Variables};
 
-#[derive(Debug, Clone)]
+#[derive(Debug, PartialEq, Clone)]
 pub struct Rules<A: Alphabet> {
     inner: Vec<Rule<A>>,
 }

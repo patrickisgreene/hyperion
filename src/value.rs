@@ -39,12 +39,13 @@ impl Value {
             Value::Expr(a, op, b) => {
                 let a = a.evaluate(parameters, variables);
                 let b = b.evaluate(parameters, variables);
-
+                // TODO: Remove these unwraps.
                 match op {
                     Operator::Add => a + b,
                     Operator::Sub => a - b,
                     Operator::Div => a / b,
                     Operator::Mul => a * b,
+                    Operator::Exponent => Value::Num(a.to_float().unwrap().powf(b.to_float().unwrap()))
                 }
             }
             s => s.clone(),

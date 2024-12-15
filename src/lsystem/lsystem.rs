@@ -2,9 +2,9 @@ use crate::{Alphabet, Axiom, Context, Rules, State, Variables};
 
 #[derive(Debug, Clone)]
 pub struct LSystem<A: Alphabet> {
-    axiom: Axiom<A>,
-    rules: Rules<A>,
-    variables: Variables,
+    pub axiom: Axiom<A>,
+    pub rules: Rules<A>,
+    pub variables: Variables,
 }
 
 impl<A: Alphabet> LSystem<A> {

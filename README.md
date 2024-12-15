@@ -9,7 +9,7 @@
 [![unsafe forbidden](https://img.shields.io/badge/unsafe-forbidden-success.svg)](https://github.com/rust-secure-code/safety-dance/)
 
 </div>
-
+![alt text](./.github/Screenshot-1.png)
 Hyperion is a highly Generic crate for working with lindenmayer systems (LSystems). Inspired by The [Algorithmic beauty of Plants](https://en.wikipedia.org/wiki/The_Algorithmic_Beauty_of_Plants). Made to work with all types of lsytems including:
 
 - Stochasic
@@ -48,7 +48,15 @@ lsys.sample(4);
 
 ```
 
-More examples can be found in the `tests` folder.
+More examples can be found in the `tests` folder. And a more complex example with rendering a 3d mesh with bevy can be found in the examples folder and run with
+
+```bash
+cargo run --example bevy_forest --release
+```
+
+## Features
+
+* grammar (default)
 
 # License
 

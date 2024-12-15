@@ -3,7 +3,7 @@ use rand::{thread_rng, Rng};
 
 use crate::{Alphabet, Condition, Context, Module, State, Value, Variables};
 
-#[derive(Debug, Clone)]
+#[derive(Debug, PartialEq, Clone)]
 pub struct Rule<A: Alphabet> {
     pub pattern: Module<A>,
     pub tokens: State<A>,
