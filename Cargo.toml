@@ -1,12 +1,12 @@
 [package]
 name = "hyperion"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2021"
 readme = "README.md"
-authors = ["Wendivoid wendivoid@gmail.com"]
+authors = ["Wendivoid patrickisgreene@gmail.com"]
 license = "MIT OR Apache-2.0"
 description = "Generic LSystem implementation."
-repository = "https://github.com/wendivoid/hyperion/"
+repository = "https://github.com/patrickisgreene/hyperion/"
 keywords = ["lsystem", "lsystems", "l-system", "lindenmayer", "grammar"]
 categories = ["mathematics", "algorithms"]
 
